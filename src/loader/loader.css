@@ -1,0 +1,29 @@
+.Loader-logo {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.thead {
+  user-select: none;
+}
+.Loader-logo:after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid rgb(5, 15, 106);
+  border-color: rgb(5, 15, 106) transparent rgb(5, 15, 106) transparent;
+  animation: Loader-logo 1.2s linear infinite;
+  user-select: none;
+}
+
+@keyframes Loader-logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
